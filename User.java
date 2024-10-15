@@ -4,14 +4,14 @@ public class User {
     private String surname;
     private String name;
     private String fathersName;
-    private String dateOfBirth;
+    private int yearOfBirth;
     private String email;
 
-    public User (String surname, String name, String fathersName, String dateOfBirth, String email){
+    public User (String surname, String name, String fathersName, int yearOfBirth, String email){
         this.surname = surname;
         this.name = name;
         this.fathersName = fathersName;
-        this.dateOfBirth = dateOfBirth;
+        this.yearOfBirth = yearOfBirth;
         this.email = email;
     }
 
@@ -27,8 +27,8 @@ public class User {
         return fathersName;
     }
 
-    public String getDateOfBirth() {
-        return dateOfBirth;
+    public int getYearOfBirth() {
+        return yearOfBirth;
     }
 
     public String getEmail() {
@@ -47,8 +47,8 @@ public class User {
         this.fathersName = fathersName;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setYearOfBirth(int dateOfBirth) {
+        this.yearOfBirth = yearOfBirth;
     }
 
     public void setEmail(String email) {
@@ -57,7 +57,8 @@ public class User {
 
     public void info() {
         System.out.println("ФИО: " + surname + " " + name + " " + fathersName);
-        System.out.println("Год рождения: " + dateOfBirth);
+        System.out.println("Год рождения: " + yearOfBirth);
         System.out.println("email: " + email);
+        System.out.println();
     }
 }
